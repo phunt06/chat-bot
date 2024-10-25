@@ -75,7 +75,6 @@ gtag('config', 'AW-11217955271"');
             <>
               <Forms />
               <div className='px-8 py-6 text-sm font-normal text-gray-500'>
-                © {new Date().getFullYear()} LangGenius, Inc. All rights reserved.
               </div>
             </>
           )}
