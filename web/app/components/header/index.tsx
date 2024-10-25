@@ -57,7 +57,6 @@ const Header = () => {
           <Link href="/apps" className='flex items-center mr-4'>
             <LogoSite className='object-contain' />
           </Link>
-          <GithubStar />
         </>}
       </div>
       {isMobile && (
@@ -65,7 +64,6 @@ const Header = () => {
           <Link href="/apps" className='flex items-center mr-4'>
             <LogoSite />
           </Link>
-          <GithubStar />
         </div>
       )}
       {!isMobile && (
