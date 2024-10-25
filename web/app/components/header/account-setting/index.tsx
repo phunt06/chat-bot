@@ -84,24 +84,10 @@ export default function AccountSetting({
         activeIcon: <RiGroup2Fill className={iconClassName} />,
       },
       {
-        // Use key false to hide this item
-        key: enableBilling ? 'billing' : false,
-        name: t('common.settings.billing'),
-        description: t('billing.plansCommon.receiptInfo'),
-        icon: <RiMoneyDollarCircleLine className={iconClassName} />,
-        activeIcon: <RiMoneyDollarCircleFill className={iconClassName} />,
-      },
-      {
         key: 'data-source',
         name: t('common.settings.dataSource'),
         icon: <RiDatabase2Line className={iconClassName} />,
         activeIcon: <RiDatabase2Fill className={iconClassName} />,
-      },
-      {
-        key: 'api-based-extension',
-        name: t('common.settings.apiBasedExtension'),
-        icon: <RiPuzzle2Line className={iconClassName} />,
-        activeIcon: <RiPuzzle2Fill className={iconClassName} />,
       },
       {
         key: (enableReplaceWebAppLogo || enableBilling) ? 'custom' : false,

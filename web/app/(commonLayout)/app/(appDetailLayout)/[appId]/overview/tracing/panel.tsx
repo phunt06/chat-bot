@@ -133,47 +133,7 @@ const Panel: FC = () => {
   }
 
   return (
-    <div className={cn('mb-3 flex justify-between items-center')}>
-      <Title className='h-[41px]' />
-      <div className='flex items-center p-2 rounded-xl border-[0.5px] border-gray-200 shadow-xs cursor-pointer hover:bg-gray-100' onClick={showPopup}>
-        {!inUseTracingProvider
-          ? <>
-            <TracingIcon size='md' className='mr-2' />
-            <div className='leading-5 text-sm font-semibold text-gray-700'>{t(`${I18N_PREFIX}.title`)}</div>
-          </>
-          : <InUseProviderIcon className='ml-1 h-4' />}
-
-        {hasConfiguredTracing && (
-          <div className='ml-4 mr-1 flex items-center'>
-            <Indicator color={enabled ? 'green' : 'gray'} />
-            <div className='ml-1.5 text-xs font-semibold text-gray-500 uppercase'>
-              {t(`${I18N_PREFIX}.${enabled ? 'enabled' : 'disabled'}`)}
-            </div>
-          </div>
-        )}
-
-        {hasConfiguredTracing && (
-          <div className='ml-2 w-px h-3.5 bg-gray-200'></div>
-        )}
-        <div className='flex items-center' onClick={e => e.stopPropagation()}>
-          <ConfigButton
-            appId={appId}
-            readOnly={readOnly}
-            hasConfigured
-            className='ml-2'
-            enabled={enabled}
-            onStatusChange={handleTracingEnabledChange}
-            chosenProvider={inUseTracingProvider}
-            onChooseProvider={handleChooseProvider}
-            langSmithConfig={langSmithConfig}
-            langFuseConfig={langFuseConfig}
-            onConfigUpdated={handleTracingConfigUpdated}
-            onConfigRemoved={handleTracingConfigRemoved}
-            controlShowPopup={controlShowPopup}
-          />
-        </div>
-      </div>
-    </div>
+    <div></div>
   )
 }
 export default React.memo(Panel)

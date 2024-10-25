@@ -1,6 +1,6 @@
 const translation = {
   pageTitle: 'Xin chào, hãy bắt đầu! 👋',
-  welcome: 'Chào mừng bạn đến với Dify, vui lòng đăng nhập để tiếp tục.',
+  welcome: 'Vui lòng đăng nhập để tiếp tục.',
   email: 'Địa chỉ email',
   emailPlaceholder: 'Nhập email của bạn',
   password: 'Mật khẩu',
