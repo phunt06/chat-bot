@@ -146,7 +146,6 @@ const NormalForm = () => {
     <>
       <div className="w-full mx-auto">
         <h2 className="text-[32px] font-bold text-gray-900">{t('login.pageTitle')}</h2>
-        <p className='mt-1 text-sm text-gray-600'>{t('login.welcome')}</p>
       </div>
 
       <div className="w-full mx-auto mt-8">
@@ -154,40 +153,8 @@ const NormalForm = () => {
           {!useEmailLogin && (
             <div className="flex flex-col gap-3 mt-6">
               <div className='w-full'>
-                <a href={getPurifyHref(`${apiPrefix}/oauth/login/github`)}>
-                  <Button
-                    disabled={isLoading}
-                    className='w-full hover:!bg-gray-50'
-                  >
-                    <>
-                      <span className={
-                        classNames(
-                          style.githubIcon,
-                          'w-5 h-5 mr-2',
-                        )
-                      } />
-                      <span className="truncate text-gray-800">{t('login.withGitHub')}</span>
-                    </>
-                  </Button>
-                </a>
               </div>
               <div className='w-full'>
-                <a href={getPurifyHref(`${apiPrefix}/oauth/login/google`)}>
-                  <Button
-                    disabled={isLoading}
-                    className='w-full hover:!bg-gray-50'
-                  >
-                    <>
-                      <span className={
-                        classNames(
-                          style.googleIcon,
-                          'w-5 h-5 mr-2',
-                        )
-                      } />
-                      <span className="truncate text-gray-800">{t('login.withGoogle')}</span>
-                    </>
-                  </Button>
-                </a>
               </div>
             </div>
           )}
@@ -266,23 +233,6 @@ const NormalForm = () => {
               </form>
             </>
           }
-          {/*  agree to our Terms and Privacy Policy. */}
-          <div className="w-hull text-center block mt-2 text-xs text-gray-600">
-            {t('login.tosDesc')}
-            &nbsp;
-            <Link
-              className='text-primary-600'
-              target='_blank' rel='noopener noreferrer'
-              href='https://dify.ai/terms'
-            >{t('login.tos')}</Link>
-            &nbsp;&&nbsp;
-            <Link
-              className='text-primary-600'
-              target='_blank' rel='noopener noreferrer'
-              href='https://dify.ai/privacy'
-            >{t('login.pp')}</Link>
-          </div>
-
           {IS_CE_EDITION && <div className="w-hull text-center block mt-2 text-xs text-gray-600">
             {t('login.goToInit')}
             &nbsp;
