@@ -118,12 +118,6 @@ export default function AccountSetting({
           activeIcon: <RiAccountCircleFill className={iconClassName} />,
         },
         {
-          key: 'integrations',
-          name: t('common.settings.integrations'),
-          icon: <RiApps2AddLine className={iconClassName} />,
-          activeIcon: <RiApps2AddFill className={iconClassName} />,
-        },
-        {
           key: 'language',
           name: t('common.settings.language'),
           icon: <RiTranslate2 className={iconClassName} />,

@@ -213,17 +213,8 @@ const AppInfo = ({ expand }: IAppInfoProps) => {
                 {appDetail.mode === 'advanced-chat' && (
                   <ChatBot className={cn('w-3 h-3 text-[#1570EF]', !expand && '!w-2.5 !h-2.5')} />
                 )}
-                {appDetail.mode === 'agent-chat' && (
-                  <CuteRobot className={cn('w-3 h-3 text-indigo-600', !expand && '!w-2.5 !h-2.5')} />
-                )}
                 {appDetail.mode === 'chat' && (
                   <ChatBot className={cn('w-3 h-3 text-[#1570EF]', !expand && '!w-2.5 !h-2.5')} />
-                )}
-                {appDetail.mode === 'completion' && (
-                  <AiText className={cn('w-3 h-3 text-[#0E9384]', !expand && '!w-2.5 !h-2.5')} />
-                )}
-                {appDetail.mode === 'workflow' && (
-                  <Route className={cn('w-3 h-3 text-[#f79009]', !expand && '!w-2.5 !h-2.5')} />
                 )}
               </span>
             </div>
@@ -240,23 +231,11 @@ const AppInfo = ({ expand }: IAppInfoProps) => {
                       <div title={t('app.newApp.advanced') || ''} className='px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{t('app.newApp.advanced').toUpperCase()}</div>
                     </>
                   )}
-                  {appDetail.mode === 'agent-chat' && (
-                    <div className='shrink-0 px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{t('app.types.agent').toUpperCase()}</div>
-                  )}
                   {appDetail.mode === 'chat' && (
                     <>
                       <div className='shrink-0 px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{t('app.types.chatbot').toUpperCase()}</div>
                       <div title={t('app.newApp.basic') || ''} className='px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{(t('app.newApp.basic').toUpperCase())}</div>
                     </>
-                  )}
-                  {appDetail.mode === 'completion' && (
-                    <>
-                      <div className='shrink-0 px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{t('app.types.completion').toUpperCase()}</div>
-                      <div title={t('app.newApp.basic') || ''} className='px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{(t('app.newApp.basic').toUpperCase())}</div>
-                    </>
-                  )}
-                  {appDetail.mode === 'workflow' && (
-                    <div className='shrink-0 px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{t('app.types.workflow').toUpperCase()}</div>
                   )}
                 </div>
               </div>
@@ -279,17 +258,8 @@ const AppInfo = ({ expand }: IAppInfoProps) => {
                   {appDetail.mode === 'advanced-chat' && (
                     <ChatBot className='w-3 h-3 text-[#1570EF]' />
                   )}
-                  {appDetail.mode === 'agent-chat' && (
-                    <CuteRobot className='w-3 h-3 text-indigo-600' />
-                  )}
                   {appDetail.mode === 'chat' && (
                     <ChatBot className='w-3 h-3 text-[#1570EF]' />
-                  )}
-                  {appDetail.mode === 'completion' && (
-                    <AiText className='w-3 h-3 text-[#0E9384]' />
-                  )}
-                  {appDetail.mode === 'workflow' && (
-                    <Route className='w-3 h-3 text-[#f79009]' />
                   )}
                 </span>
               </div>
@@ -302,23 +272,11 @@ const AppInfo = ({ expand }: IAppInfoProps) => {
                       <div title={t('app.newApp.advanced') || ''} className='px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{t('app.newApp.advanced').toUpperCase()}</div>
                     </>
                   )}
-                  {appDetail.mode === 'agent-chat' && (
-                    <div className='shrink-0 px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{t('app.types.agent').toUpperCase()}</div>
-                  )}
                   {appDetail.mode === 'chat' && (
                     <>
                       <div className='shrink-0 px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{t('app.types.chatbot').toUpperCase()}</div>
                       <div title={t('app.newApp.basic') || ''} className='px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{(t('app.newApp.basic').toUpperCase())}</div>
                     </>
-                  )}
-                  {appDetail.mode === 'completion' && (
-                    <>
-                      <div className='shrink-0 px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{t('app.types.completion').toUpperCase()}</div>
-                      <div title={t('app.newApp.basic') || ''} className='px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{(t('app.newApp.basic').toUpperCase())}</div>
-                    </>
-                  )}
-                  {appDetail.mode === 'workflow' && (
-                    <div className='shrink-0 px-1 border bg-white border-[rgba(0,0,0,0.08)] rounded-[5px] truncate'>{t('app.types.workflow').toUpperCase()}</div>
                   )}
                 </div>
               </div>

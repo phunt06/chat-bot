@@ -37,17 +37,8 @@ const AppCard = ({
             {appBasicInfo.mode === 'advanced-chat' && (
               <ChatBot className='w-3 h-3 text-[#1570EF]' />
             )}
-            {appBasicInfo.mode === 'agent-chat' && (
-              <CuteRobot className='w-3 h-3 text-indigo-600' />
-            )}
             {appBasicInfo.mode === 'chat' && (
               <ChatBot className='w-3 h-3 text-[#1570EF]' />
-            )}
-            {appBasicInfo.mode === 'completion' && (
-              <AiText className='w-3 h-3 text-[#0E9384]' />
-            )}
-            {appBasicInfo.mode === 'workflow' && (
-              <Route className='w-3 h-3 text-[#f79009]' />
             )}
           </span>
         </div>
@@ -58,9 +49,6 @@ const AppCard = ({
           <div className='flex items-center text-[10px] leading-[18px] text-gray-500 font-medium'>
             {appBasicInfo.mode === 'advanced-chat' && <div className='truncate'>{t('app.types.chatbot').toUpperCase()}</div>}
             {appBasicInfo.mode === 'chat' && <div className='truncate'>{t('app.types.chatbot').toUpperCase()}</div>}
-            {appBasicInfo.mode === 'agent-chat' && <div className='truncate'>{t('app.types.agent').toUpperCase()}</div>}
-            {appBasicInfo.mode === 'workflow' && <div className='truncate'>{t('app.types.workflow').toUpperCase()}</div>}
-            {appBasicInfo.mode === 'completion' && <div className='truncate'>{t('app.types.completion').toUpperCase()}</div>}
           </div>
         </div>
       </div>
