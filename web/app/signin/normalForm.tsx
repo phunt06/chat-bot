@@ -191,9 +191,9 @@ const NormalForm = () => {
                 <div className='mb-4'>
                   <label htmlFor="password" className="my-2 flex items-center justify-between text-sm font-medium text-gray-900">
                     <span>{t('login.password')}</span>
-                    <Link href='/forgot-password' className='text-primary-600'>
+                    {/* <Link href='/forgot-password' className='text-primary-600'>
                       {t('login.forget')}
-                    </Link>
+                    </Link> */}
                   </label>
                   <div className="relative mt-1">
                     <input

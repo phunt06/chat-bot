@@ -33,8 +33,7 @@ const Container = () => {
 
   const options = useMemo(() => {
     return [
-      { value: 'dataset', text: t('dataset.datasets') },
-      ...(currentWorkspace.role === 'dataset_operator' ? [] : [{ value: 'api', text: t('dataset.datasetsApi') }]),
+      { value: 'dataset', text: t('dataset.datasets') }
     ]
   }, [currentWorkspace.role, t])
 
